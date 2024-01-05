@@ -43,7 +43,9 @@ Shape: (1022, 82)
 Features: 43 Categorical Features, 39 Numerical Features
 Target Variable: Out of 1022 total counts of SalePrice, it has a mean of roughly $181,123, a standard deviation of $81,000, a minimum value of $35,311, and a maximum value of $755,000. The graphical representation of the spread, which clearly shows as skewed right:
 
-<img width="600" alt="Target Variable" src="images/Sale_price_evaluation.png">
+<div style="text-align:center;">
+    <img width="600" alt="Target Variable" src="images/Sale_price_evaluation.png">
+</div>
 
 -  __Categorical Features Analysis__:
     - __Missing Values__:
