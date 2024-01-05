@@ -102,13 +102,13 @@ Target Variable: Out of 1022 total counts of SalePrice, it has a mean of roughly
    There are 2 columns which has missing values. For numerical missing values, mean, median , mode and KNN Imputer are mostly implemented.
 
    - __Missing Value Imputation__:
-    <p style="text-align:center;">
+    <div style="display: flex; justify-content: center;">
     <img width="400" alt="Missing Values" src="images/lotfrontage.png">
-    </p>
+    </div>
 
-    <p style="text-align:center;">
+    <div style="display: flex; justify-content: center;">
     <img width="400" alt="Missing Values" src="images/masvnrarea.png">
-    </p>
+    </div>
 
    Both Simple Mean Imputation and KNN Imputation are viable methods for handling missing values without significantly altering the data's underlying statistics or distribution. Given the simplicity of Simple Mean Imputation and the relatively small size of the dataset, it is considered the most suitable approach for this particular scenario. This eliminates the need for more intricate imputation techniques.
 
