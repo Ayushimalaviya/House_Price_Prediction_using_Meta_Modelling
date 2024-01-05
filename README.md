@@ -43,13 +43,13 @@ Shape: (1022, 82)
 Features: 43 Categorical Features, 39 Numerical Features
 Target Variable: Out of 1022 total counts of SalePrice, it has a mean of roughly $181,123, a standard deviation of $81,000, a minimum value of $35,311, and a maximum value of $755,000. The graphical representation of the spread, which clearly shows as skewed right:
 
-<div style="text-align:center;">
+<div align="center">
            <img width="600" alt="Target Variable" src="images/Sale_price_evaluation.png">
 </div>
 
 -  __Categorical Features Analysis__:
     - __Missing Values__:
-    <div style="text-align:center;">
+    <div align="center">
      <img width="600" alt="Missing Values table" src="images/Missing_value_overview.png">
     </div>
 
@@ -59,7 +59,7 @@ Target Variable: Out of 1022 total counts of SalePrice, it has a mean of roughly
       - ###### Mode Imputation: 
       For categorical features, mode imputation has gained prominent use due to its effectiveness in minimizing bias and skewness, particularly when the proportion of missing values falls within the range of 0% to 10%. Consequently, due to the majority of our data exhibiting missing value percentages below 10%, mode imputation serves as the preferred method for addressing these missing values.
       
-      <div style="text-align:center;">
+      <div align="center">
       <img width="1420" alt="Mode Imputation" src="images/histograms_mode_impute.png">
       </div>
 
@@ -71,21 +71,21 @@ Target Variable: Out of 1022 total counts of SalePrice, it has a mean of roughly
        
        As, The insights and significance must remains same even after imputations. The Chi_square contigency test was implemented to evaluate the significance of variables in relation to the target variable, both before and after imputation. 
 
-       <div style="text-align:center;">
+       <div align="center">
        <img width="600" alt="Chi Sqaure Test" src="images/chi_square_test.png">
        <div>
 
        After Implementation, It can be concluded that mode imputation stands as a reliable method, as the result shows consistent level of significance between the feature variables and the 'Sale Price' variable.
 
     - __Unique Values per Feature__:
-        <div style="text-align:center;">
+       <div align="center">
         <img width="400" alt="Unique Values per columns" src="images/unique_values.png">
         </div>
         There are 7 Features which has more than 5 unique values. These Features has many unique values which are unevenly spreaded. Hence, It can affect while converting into non-categorical features. With one hot encoding it can increase number of feature column which encourage high-dimensionality issues in the data. However, There are some columns which has high significance and correlation with the target variable, features like Neighborhood , SaleType and many others. Hence, Removing these features might not help.
 
 - __Numerical Feature Analysis__:
     - __Sparsed Data__:
-    <div style="text-align:center;">
+    <div align="center">
     <img width="400" alt="Sparsity in each column" src="images/sparsity.png">
     </div>
     There are 17 columns which has more than half sparsed values. This sparsity can increase sensitivity to noise and mean sqaured error might not be well-suited for sparse data, as they can be overly sensitive to the presence of zero values.
@@ -96,18 +96,18 @@ Target Variable: Out of 1022 total counts of SalePrice, it has a mean of roughly
     On top it, Implemented Pearson Correlation Test to get correlation before and after Imputation. The mean and KNN Imputation had similar results with before Imputations.
 
    - __Missing Values__:
-    <div style="text-align:center;">
+    <div align="center">
     <img width="300" alt="Missing Values" src="images/numerical_missing_values.png">
     </div>
    There are 2 columns which has missing values. For numerical missing values, mean, median , mode and KNN Imputer are mostly implemented.
 
    - __Missing Value Imputation__:
-    <div style="display: flex; justify-content: center;">
-    <img width="400" alt="Missing Values" src="images/lotfrontage.png">
+    <div align="center">
+    <img width="500" alt="Missing Values" src="images/lotfrontage.png">
     </div>
 
     <div align="center">
-    <img width="400" alt="Missing Values" src="images/masvnrarea.png">
+    <img width="500" alt="Missing Values" src="images/masvnrarea.png">
     </div>
 
    Both Simple Mean Imputation and KNN Imputation are viable methods for handling missing values without significantly altering the data's underlying statistics or distribution. Given the simplicity of Simple Mean Imputation and the relatively small size of the dataset, it is considered the most suitable approach for this particular scenario. This eliminates the need for more intricate imputation techniques.
