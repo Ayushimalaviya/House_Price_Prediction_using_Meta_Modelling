@@ -47,7 +47,7 @@ Target Variable: Out of 1022 total counts of SalePrice, it has a mean of roughly
 
 -  __Categorical Features Analysis__:
     - __Missing Values__:
-           <img width="300" alt="Missing Values table" src="images/Missing_value_overview.png">
+           <img width="1000" alt="Missing Values table" src="images/Missing_value_overview.png">
 
     Above Missing Value Table shows column which has missing values, number of unique count and null value count, total number of missing values per column and percentage of missing values. Overall, There are 4 columns having more than 50% null values and 11 columns having missing values more than 0.5%. As a result, Dropped __PoolQC__ , __MiscFeature__, __Alley__, __Fence__ features and apply imputation techniques on the remaining columns.
 
@@ -65,23 +65,23 @@ Target Variable: Out of 1022 total counts of SalePrice, it has a mean of roughly
        
        As, The insights and significance must remains same even after imputations. The Chi_square contigency test was implemented to evaluate the significance of variables in relation to the target variable, both before and after imputation. 
 
-       <img width="300" alt="Chi Sqaure Test" src="images/chi_square_test.png">
+       <img width="1000" alt="Chi Sqaure Test" src="images/chi_square_test.png">
 
        After Implementation, It can be concluded that mode imputation stands as a reliable method, as the result shows consistent level of significance between the feature variables and the 'Sale Price' variable.
 
     - __Unique Values per Feature__:
-        <img width="300" alt="Unique Values per columns" src="images/unique_values.png">
+        <img width="1000" alt="Unique Values per columns" src="images/unique_values.png">
 
         There are 7 Features which has more than 5 unique values. These Features has many unique values which are unevenly spreaded. Hence, It can affect while converting into non-categorical features. With one hot encoding it can increase number of feature column which encourage high-dimensionality issues in the data. However, There are some columns which has high significance and correlation with the target variable, features like Neighborhood , SaleType and many others. Hence, Removing these features might not help.
 
 - __Numerical Feature Analysis__:
     - __Sparsed Data__:
-    <img width="300" alt="Sparsity in each column" src="images/sparsity.png">
+    <img width="1000" alt="Sparsity in each column" src="images/sparsity.png">
     
     There are 17 columns which has more than half sparsed values. This sparsity can increase sensitivity to noise and mean sqaured error might not be well-suited for sparse data, as they can be overly sensitive to the presence of zero values.
 
     - __Correlation__:
-    <img width="300" alt="Heat Map" src="images/heat_map.png">
+    <img width="1000" alt="Heat Map" src="images/heat_map.png">
     
     From Above Non Categorical Features, It can be said that 'GarageArea'-'GarageCars', '1stFlrSF'-'TotalBsmtSF','TotRmsAbvGrd'-'GrLivArea','GarageYrBlt'-'YearBuilt' are highly correlated features. Hence, Dropping those which are less correleated to the Saleprice for above absorved pairs. Those are ['GarageArea', '1stFlrSF', 'GarageYrBlt','TotRmsAbvGrd']. For now, only Dropping Garage Year Built as it has high correlation with YearRemodAdd amd Yearbuilt as compare to SalePrice (Target Variable). 
 
