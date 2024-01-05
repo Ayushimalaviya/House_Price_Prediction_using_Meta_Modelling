@@ -180,12 +180,16 @@ Evaluating model performance across datasets reveals further comparisions:
 
    - Training Data: Gradient Boosting stands out with an MSE of 1,548,129.8 and an MAE of 3,194.16, indicating a strong fit to the training data.
    
-   <img width="1420" alt="Silhoutte Score" src="images/train_data_results.png">
+   <div align="center">
+   <img width="900" alt="train results" src="images/train_data_results.png">
+   </div>
 
    - Test Data: Random Forest claims the top spot, demonstrating MSE scores between 15,116,734.4 and 1.911566e+08, and MAE scores ranging from 5,071.71 to 8,169.39. This suggests its superior ability to generalize to unseen data.
 
-   <img width="1420" alt="Silhoutte Score" src="images/test_data_results.png">
-
+   <div align="center">
+   <img width="1420" alt="test results" src="images/test_data_results.png">
+   </div>
+   
 It's important to try different models with different sets of data to find the best one for the particular dataset.
 
 - Conclusion 
