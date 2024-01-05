@@ -106,7 +106,7 @@ Target Variable: Out of 1022 total counts of SalePrice, it has a mean of roughly
     <img width="400" alt="Missing Values" src="images/lotfrontage.png">
     </div>
 
-    <div style="display: flex; justify-content: center;">
+    <div align="center">
     <img width="400" alt="Missing Values" src="images/masvnrarea.png">
     </div>
 
