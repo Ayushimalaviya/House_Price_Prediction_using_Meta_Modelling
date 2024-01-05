@@ -43,11 +43,11 @@ Shape: (1022, 82)
 Features: 43 Categorical Features, 39 Numerical Features
 Target Variable: Out of 1022 total counts of SalePrice, it has a mean of roughly $181,123, a standard deviation of $81,000, a minimum value of $35,311, and a maximum value of $755,000. The graphical representation of the spread, which clearly shows as skewed right:
 
-<img width="1420" alt="Target Variable" src="images/Sale_price_evaluation.png">
+<img width="300" alt="Target Variable" src="images/Sale_price_evaluation.png">
 
 -  __Categorical Features Analysis__:
     - __Missing Values__:
-           <img width="1420" alt="Missing Values table" src="images/Missing_value_overview.png">
+           <img width="300" alt="Missing Values table" src="images/Missing_value_overview.png">
 
     Above Missing Value Table shows column which has missing values, number of unique count and null value count, total number of missing values per column and percentage of missing values. Overall, There are 4 columns having more than 50% null values and 11 columns having missing values more than 0.5%. As a result, Dropped __PoolQC__ , __MiscFeature__, __Alley__, __Fence__ features and apply imputation techniques on the remaining columns.
 
@@ -65,12 +65,12 @@ Target Variable: Out of 1022 total counts of SalePrice, it has a mean of roughly
        
        As, The insights and significance must remains same even after imputations. The Chi_square contigency test was implemented to evaluate the significance of variables in relation to the target variable, both before and after imputation. 
 
-       <img width="1420" alt="Chi Sqaure Test" src="images/chi_square_test.png">
+       <img width="300" alt="Chi Sqaure Test" src="images/chi_square_test.png">
 
        After Implementation, It can be concluded that mode imputation stands as a reliable method, as the result shows consistent level of significance between the feature variables and the 'Sale Price' variable.
 
-    - __Unique Value per Feature__:
-        <img width="1420" alt="Unique Values per columns" src="images/unique_values.png">
+    - __Unique Values per Feature__:
+        <img width="300" alt="Unique Values per columns" src="images/unique_values.png">
 
         There are 7 Features which has more than 5 unique values. These Features has many unique values which are unevenly spreaded. Hence, It can affect while converting into non-categorical features. With one hot encoding it can increase number of feature column which encourage high-dimensionality issues in the data. However, There are some columns which has high significance and correlation with the target variable, features like Neighborhood , SaleType and many others. Hence, Removing these features might not help.
 
@@ -94,6 +94,7 @@ Target Variable: Out of 1022 total counts of SalePrice, it has a mean of roughly
 
    - __Missing Value Imputation__:
    <img width="300" alt="Missing Values" src="images/lotfrontage.png">
+
 
    <img width="300" alt="Missing Values" src="images/masvnrarea.png">
 
