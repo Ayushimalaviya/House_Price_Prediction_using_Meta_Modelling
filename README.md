@@ -86,7 +86,7 @@ Target Variable: Out of 1022 total counts of SalePrice, it has a mean of roughly
 - __Numerical Feature Analysis__:
     - __Sparsed Data__:
     <div style="text-align:center;">
-    <img width="600" alt="Sparsity in each column" src="images/sparsity.png">
+    <img width="400" alt="Sparsity in each column" src="images/sparsity.png">
     </div>
     There are 17 columns which has more than half sparsed values. This sparsity can increase sensitivity to noise and mean sqaured error might not be well-suited for sparse data, as they can be overly sensitive to the presence of zero values.
 
@@ -96,15 +96,19 @@ Target Variable: Out of 1022 total counts of SalePrice, it has a mean of roughly
     On top it, Implemented Pearson Correlation Test to get correlation before and after Imputation. The mean and KNN Imputation had similar results with before Imputations.
 
    - __Missing Values__:
-   <img width="300" alt="Missing Values" src="images/numerical_missing_values.png">
-    
+    <div style="text-align:center;">
+    <img width="300" alt="Missing Values" src="images/numerical_missing_values.png">
+    </div>
    There are 2 columns which has missing values. For numerical missing values, mean, median , mode and KNN Imputer are mostly implemented.
 
    - __Missing Value Imputation__:
-   <img width="300" alt="Missing Values" src="images/lotfrontage.png">
+    <div style="text-align:center;">
+    <img width="300" alt="Missing Values" src="images/lotfrontage.png">
+    </div>
 
-
-   <img width="300" alt="Missing Values" src="images/masvnrarea.png">
+    <div style="text-align:center;"> 
+    <img width="300" alt="Missing Values" src="images/masvnrarea.png">
+    </div>
 
    Both Simple Mean Imputation and KNN Imputation are viable methods for handling missing values without significantly altering the data's underlying statistics or distribution. Given the simplicity of Simple Mean Imputation and the relatively small size of the dataset, it is considered the most suitable approach for this particular scenario. This eliminates the need for more intricate imputation techniques.
 
