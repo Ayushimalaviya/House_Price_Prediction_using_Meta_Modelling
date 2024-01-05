@@ -76,26 +76,26 @@ Target Variable: Out of 1022 total counts of SalePrice, it has a mean of roughly
 
 - __Numerical Feature Analysis__:
     - __Sparsed Data__:
-    <img width="1420" alt="Sparsity in each column" src="images/sparsity.png">
+    <img width="120" alt="Sparsity in each column" src="images/sparsity.png">
     
     There are 17 columns which has more than half sparsed values. This sparsity can increase sensitivity to noise and mean sqaured error might not be well-suited for sparse data, as they can be overly sensitive to the presence of zero values.
 
     - __Correlation__:
-    <img width="1420" alt="Heat Map" src="images/heat_map.png">
+    <img width="120" alt="Heat Map" src="images/heat_map.png">
     
     From Above Non Categorical Features, It can be said that 'GarageArea'-'GarageCars', '1stFlrSF'-'TotalBsmtSF','TotRmsAbvGrd'-'GrLivArea','GarageYrBlt'-'YearBuilt' are highly correlated features. Hence, Dropping those which are less correleated to the Saleprice for above absorved pairs. Those are ['GarageArea', '1stFlrSF', 'GarageYrBlt','TotRmsAbvGrd']. For now, only Dropping Garage Year Built as it has high correlation with YearRemodAdd amd Yearbuilt as compare to SalePrice (Target Variable). 
 
     On top it, Implemented Pearson Correlation Test to get correlation before and after Imputation. The mean and KNN Imputation had similar results with before Imputations.
 
    - __Missing Values__:
-   <img width="1420" alt="Missing Values" src="images/heat_map.png">
+   <img width="120" alt="Missing Values" src="images/numerical_missing_values.png">
     
    There are 2 columns which has missing values. For numerical missing values, mean, median , mode and KNN Imputer are mostly implemented.
 
    - __Missing Value Imputation__:
-   <img width="1420" alt="Missing Values" src="images/lotfrontage.png">
+   <img width="120" alt="Missing Values" src="images/lotfrontage.png">
 
-   <img width="1420" alt="Missing Values" src="images/masvnrarea.png">
+   <img width="120" alt="Missing Values" src="images/masvnrarea.png">
 
    Both Simple Mean Imputation and KNN Imputation are viable methods for handling missing values without significantly altering the data's underlying statistics or distribution. Given the simplicity of Simple Mean Imputation and the relatively small size of the dataset, it is considered the most suitable approach for this particular scenario. This eliminates the need for more intricate imputation techniques.
 
@@ -117,7 +117,7 @@ ________________________________________________________________________
 
   Features Selected on the basis of common features obtained from Statistical Test and Modelling Analysis:
   
-  <img width="1420" alt="Selected Features" src="images/selected_features.png">
+  <img width="120" alt="Selected Features" src="images/selected_features.png">
   
 ________________________________________________________________________
 
