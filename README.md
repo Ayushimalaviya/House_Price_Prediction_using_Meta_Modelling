@@ -43,11 +43,11 @@ Shape: (1022, 82)
 Features: 43 Categorical Features, 39 Numerical Features
 Target Variable: Out of 1022 total counts of SalePrice, it has a mean of roughly $181,123, a standard deviation of $81,000, a minimum value of $35,311, and a maximum value of $755,000. The graphical representation of the spread, which clearly shows as skewed right:
 
-<img width="300" alt="Target Variable" src="images/Sale_price_evaluation.png">
+<img width="900" alt="Target Variable" src="images/Sale_price_evaluation.png">
 
 -  __Categorical Features Analysis__:
     - __Missing Values__:
-           <img width="1000" alt="Missing Values table" src="images/Missing_value_overview.png">
+           <img width="900" alt="Missing Values table" src="images/Missing_value_overview.png">
 
     Above Missing Value Table shows column which has missing values, number of unique count and null value count, total number of missing values per column and percentage of missing values. Overall, There are 4 columns having more than 50% null values and 11 columns having missing values more than 0.5%. As a result, Dropped __PoolQC__ , __MiscFeature__, __Alley__, __Fence__ features and apply imputation techniques on the remaining columns.
 
