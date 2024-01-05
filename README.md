@@ -129,9 +129,9 @@ ________________________________________________________________________
   Applied, Recursive Feature Elimination (RFE) pipeline with Random Forest and Lasso, the most relevant features were identified and selected based on their significance in predicting the target variable.
 
   Features Selected on the basis of common features obtained from Statistical Test and Modelling Analysis:
-  
-  <img width="120" alt="Selected Features" src="images/selected_features.png">
-  
+  <div align="center">
+  <img width="400" alt="Selected Features" src="images/selected_features.png">
+  </div>
 ________________________________________________________________________
 
 ### Cluster into k many subgroups:
@@ -142,18 +142,19 @@ After performing EDA and Feature Engineering, the train data was clustered into 
 
 The Elbow Method was used for determining the optimal number of clusters (k) in KMeans clustering by plotting the inertia (within-cluster sum of squares) against various values of k. Obtained k values by visualizing the inertia values against the number of clusters to identify the point where the inertia starts to decrease more slowly, indicating the optimal number of clusters where the Elbow occurs.
 
-<img width="1420" alt="Elbow Method" src="images/elbow_method.png">
+<div align="center">
+<img width="600" alt="Elbow Method" src="images/elbow_method.png">
+</div>
 
 Elbow Curve, shows that 2 or 3 can be the K values.
 
 To confirm the results of the elbow method, silhouette analysis was done to determine the optimal number of clusters (k) for KMeans clustering on the given dataset. A range of k values (from 2 to 5) was iterated through to compute silhouette scores for each clustering configuration.
 
-<img width="1420" alt="Elbow Method" src="images/elbow_method.png">
-
-For each value of k, a silhouette plot was generated showing the silhouette coefficients for each sample and their clusters, highlighting the silhouette score's average value with a red dashed line. It is very clear from the below image, k with value 3 has widely and at most evenly spread clusters around the dataset. K with value 2 has unevely spreaded thickness. 
-
-<img width="1420" alt="Silhoutte Score" src="images/silhoutte_score.png">
-
+For each value of k, a silhouette plot was generated showing the silhouette coefficients for each sample and their clusters, highlighting the silhouette score's average value with a red dashed line. It is very clear from the below image, k with value 3 has widely and at most evenly spread clusters around the dataset. K with value 2 has unevely spreaded thickness.
+ 
+<div align="center">
+<img width="900" alt="Silhoutte Score" src="images/silhoutte_score.png">
+</div>
 Now the each group value were segrated using K-values and classified into different group. The trained classifier based on the K optimal value was validated using grid-search cv. The group performed hyperparameter tuning for a Random Forest Classifier using grid-search cv. First, the dataset was split into training and validation sets, and then a grid of hyperparameters was defined to search through, including the number of estimators, maximum depth of trees, and criteria for node splitting. The grid-search cv evaluated various combinations of these hyperparameters using 5-fold cross-validation on the training set, selecting the best-performing set of hyperparameters based on accuracy.
 
 The Shape of Group 1 is (381, 36), Group 2 is (309, 36), Group 3 is (332, 36) after validating using grid-search cv.
