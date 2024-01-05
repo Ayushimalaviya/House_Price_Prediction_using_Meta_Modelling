@@ -6,7 +6,8 @@ ________________________________________________________________________
 
 The use of meta-modeling, particularly stacking or ensemble methods, involves combining the predictions of multiple base models to create a more robust and potentially higher-performing model.
 
-<p style="text-align: justify;">
+<div style="text-align: justify;">
+
 - Improve Generalization:
    Meta-modeling can help improve the generalization performance of overall model. By combining predictions from different base models, the ensemble model may capture a broader range of patterns in the data, reducing overfitting and enhancing performance on new, unseen data. __Let's see if we will are getting better results with High dimensionality data__.
 
@@ -18,7 +19,7 @@ The use of meta-modeling, particularly stacking or ensemble methods, involves co
 
 - Increased Model Stability:
    Meta-modeling can increase the stability of predictions by reducing the impact of outliers or noise in individual base models. The ensemble model tends to be more resilient to extreme predictions from any single model.
-</p>
+</div>
 ________________________________________________________________________
 
 ### Dataset Description:
