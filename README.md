@@ -78,20 +78,20 @@ Target Variable: Out of 1022 total counts of SalePrice, it has a mean of roughly
        After Implementation, It can be concluded that mode imputation stands as a reliable method, as the result shows consistent level of significance between the feature variables and the 'Sale Price' variable.
 
     - __Unique Values per Feature__:
-        <img width="1000" alt="Unique Values per columns" src="images/unique_values.png">
-
+        <div style="text-align:center;">
+        <img width="400" alt="Unique Values per columns" src="images/unique_values.png">
+        </div>
         There are 7 Features which has more than 5 unique values. These Features has many unique values which are unevenly spreaded. Hence, It can affect while converting into non-categorical features. With one hot encoding it can increase number of feature column which encourage high-dimensionality issues in the data. However, There are some columns which has high significance and correlation with the target variable, features like Neighborhood , SaleType and many others. Hence, Removing these features might not help.
 
 - __Numerical Feature Analysis__:
     - __Sparsed Data__:
-    <img width="1000" alt="Sparsity in each column" src="images/sparsity.png">
-    
+    <div style="text-align:center;">
+    <img width="600" alt="Sparsity in each column" src="images/sparsity.png">
+    </div>
     There are 17 columns which has more than half sparsed values. This sparsity can increase sensitivity to noise and mean sqaured error might not be well-suited for sparse data, as they can be overly sensitive to the presence of zero values.
 
-    - __Correlation__:
-    <img width="1000" alt="Heat Map" src="images/heat_map.png">
-    
-    From Above Non Categorical Features, It can be said that 'GarageArea'-'GarageCars', '1stFlrSF'-'TotalBsmtSF','TotRmsAbvGrd'-'GrLivArea','GarageYrBlt'-'YearBuilt' are highly correlated features. Hence, Dropping those which are less correleated to the Saleprice for above absorved pairs. Those are ['GarageArea', '1stFlrSF', 'GarageYrBlt','TotRmsAbvGrd']. For now, only Dropping Garage Year Built as it has high correlation with YearRemodAdd amd Yearbuilt as compare to SalePrice (Target Variable). 
+    - __Correlation__:    
+    In Non Categorical Features, It can be said that 'GarageArea'-'GarageCars', '1stFlrSF'-'TotalBsmtSF','TotRmsAbvGrd'-'GrLivArea','GarageYrBlt'-'YearBuilt' are highly correlated features. Hence, Dropping those which are less correleated to the Saleprice for above absorved pairs. Those are ['GarageArea', '1stFlrSF', 'GarageYrBlt','TotRmsAbvGrd']. For now, only Dropping Garage Year Built as it has high correlation with YearRemodAdd amd Yearbuilt as compare to SalePrice (Target Variable). 
 
     On top it, Implemented Pearson Correlation Test to get correlation before and after Imputation. The mean and KNN Imputation had similar results with before Imputations.
 
