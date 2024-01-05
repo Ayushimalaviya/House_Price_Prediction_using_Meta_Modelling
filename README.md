@@ -50,16 +50,18 @@ Target Variable: Out of 1022 total counts of SalePrice, it has a mean of roughly
 -  __Categorical Features Analysis__:
     - __Missing Values__:
     <div style="text-align:center;">
-           <img width="600" alt="Missing Values table" src="images/Missing_value_overview.png">
+     <img width="600" alt="Missing Values table" src="images/Missing_value_overview.png">
     </div>
-    
+
     Above Missing Value Table shows column which has missing values, number of unique count and null value count, total number of missing values per column and percentage of missing values. Overall, There are 4 columns having more than 50% null values and 11 columns having missing values more than 0.5%. As a result, Dropped __PoolQC__ , __MiscFeature__, __Alley__, __Fence__ features and apply imputation techniques on the remaining columns.
 
     - __Imputation and Significance__:
       - ###### Mode Imputation: 
       For categorical features, mode imputation has gained prominent use due to its effectiveness in minimizing bias and skewness, particularly when the proportion of missing values falls within the range of 0% to 10%. Consequently, due to the majority of our data exhibiting missing value percentages below 10%, mode imputation serves as the preferred method for addressing these missing values.
-    
+      
+      <div style="text-align:center;">
       <img width="1420" alt="Mode Imputation" src="images/histograms_mode_impute.png">
+      </div>
 
       It can be observed that there is not much difference after and before imputation. 
 
@@ -69,7 +71,9 @@ Target Variable: Out of 1022 total counts of SalePrice, it has a mean of roughly
        
        As, The insights and significance must remains same even after imputations. The Chi_square contigency test was implemented to evaluate the significance of variables in relation to the target variable, both before and after imputation. 
 
-       <img width="1000" alt="Chi Sqaure Test" src="images/chi_square_test.png">
+       <div style="text-align:center;">
+       <img width="600" alt="Chi Sqaure Test" src="images/chi_square_test.png">
+       <div>
 
        After Implementation, It can be concluded that mode imputation stands as a reliable method, as the result shows consistent level of significance between the feature variables and the 'Sale Price' variable.
 
