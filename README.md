@@ -7,9 +7,7 @@ ________________________________________________________________________
 The use of meta-modeling, particularly stacking or ensemble methods, involves combining the predictions of multiple base models to create a more robust and potentially higher-performing model.
 
 - Improve Generalization:
-   <p align="justify">
    Meta-modeling can help improve the generalization performance of overall model. By combining predictions from different base models, the ensemble model may capture a broader range of patterns in the data, reducing overfitting and enhancing performance on new, unseen data. __Let's see if we will are getting better results with High dimensionality data__.
-   </p>
 
 - Reduction of Model Bias and Variance:
    Different base models may have varying strengths and weaknesses. Combining them can help mitigate biases and reduce the overall variance of the model. This is especially beneficial when individual models may be sensitive to specific aspects of the data.
@@ -25,7 +23,7 @@ ________________________________________________________________________
 ________________________________________________________________________
 
 
-_The dataset__ goal is to predict the house price (Regression Analysis).
+__The goal__ is to predict the house price (Regression Analysis).
 
 The train data file contains 1022 rows with 81 columns (features). This high number of features presents significant challenges for machine learning modeling. This situation, known as high dimensionality, can lead to several issues that compromise the accuracy and gist of the data. The key problems associated with high dimensionality include __overfitting__, __increased training time__ and __resource consumption__, __sparsity issues__, and __lack of data knowledge__.
 
